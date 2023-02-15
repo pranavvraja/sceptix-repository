@@ -1,12 +1,10 @@
-const loader = document.querySelector('.loader');
+var myVar;
 
-const fade = setInterval(() => {
-    if(!loader.style.opacity) {
-        loader.style.opacity = 1;
-    }
-    if(loader.style.opacity > 0) {
-        loader.style.opacity -= 0.1;
-    } else {
-        clearInterval(fade);
-    }
-}, 200);
+function myFunction() {
+  myVar = setTimeout(showPage, 4050);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("header").style.display = "block";
+}
