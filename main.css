@@ -92,7 +92,7 @@ body{
     text-decoration: overline;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    background: url(project-mini/back.png);
+    background: url(images/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 15s linear infinite;
@@ -149,7 +149,7 @@ nav ul li a:hover::after{
     text-decoration: overline;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    background: url(project-mini/back.png);
+    background: url(images/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 15s linear infinite;
