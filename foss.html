@@ -5,24 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOSS</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet"  href="main.css">
     
 </head>
 <body onload="myFunction()">
 
     <div id="loader">
-    <h1 id="head1" data-text="Loading...">Loading...</h1>
+        <script src="main.js"></script>
+    <l1 id="head1" data-text="Loading...">Loading...</l1>
     </div>
+    
 
      <div id="header" >
-        <script src="main.js"></script>
-        <div id="ti">
-        <h1><span>FOSS</span>.</h1>
-        </div>
             <div class="container">
 
-                </div>
+                
                 <nav>
+                    <h1 class="logo">FOSS.</h1>
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -30,10 +29,71 @@
                 </nav>
                 <div class="text-box">
                     <p>Welcome To FOSS</p>
-                    <h2> Free For All</h2>
+                    <h2><span> Free For All</span></h2>
                 </div>
             </div>
         </div>
+
+        
+        <!---------------------------------------about------------------>
+        <div id="about">
+            <div class="container1">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/foss-abt.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="'subs-title">About </h1>
+                        <p>
+                            here the about section will come
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education </p>
+                        </div>
+                        <div class="tab-contents actice-tab" id="skills">
+                            <ul>
+                                <li><span>UI?UX</span><br>Design for FOSS opensource software</li>
+                                <li><span>web3</span><br>Web Development</li>
+                                <li><span>Coding</span><br>Open Source</li> 
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>software</span><br>more details</li>
+                                <li><span>tech</span><br>Web Development</li>
+                                <li><span>opensource</span><br>Open Source</li> 
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>CONTENT REQUIRED</span><br>more details</li>
+                                <li><span>tech</span><br>Web Development</li>
+                                <li><span>opensource</span><br>Open Source</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!----------------------------------------->
+        <script>
+            var tablinks =document.getElementsByClassName("tab-links");
+            var tabcontents =document.getElementsByClassName("tab-contents");  
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("actice-tab"); 
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("actice-tab");     
+            }
+        </script>
 
     
 </body>
