@@ -59,7 +59,7 @@ body{
     color: aquamarine;
     overflow: hidden;
     border-bottom: 16px solid aquamarine;
-    animation: animate 4s linear infinite;
+    animation: animate 3s linear infinite;
 }
 
 @keyframes animate
