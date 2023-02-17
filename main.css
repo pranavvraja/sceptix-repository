@@ -5,15 +5,25 @@
     box-sizing: border-box;
 }
 
+.progress1{
+    width: 100%;
+    height: 8px;
+    background-color:black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.progressbar{
+    height: 8px;
+    background:whitesmoke;
+    width: 0%;
+}
+
 body{
-    /*display: flex;
-    min-height: 100vh;*/
-    /*background: #080808;*/
     background-image: linear-gradient(60deg,#ff6596,#66bef8,#d88cff);
     background-size: 600% 600%;
     animation: bgAnimatedGradient 2s infinite linear;
-   /* align-items: center;
-    justify-content: center;*/
 }
 @keyframes bgAnimatedGradient{
     0%
@@ -27,7 +37,7 @@ body{
 
 #loader{
     position: fixed;
-    background: #8b1dc2;   
+    background: #203358;   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,9 +66,9 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    color: aquamarine;
+    color: #276C20;
     overflow: hidden;
-    border-bottom: 16px solid aquamarine;
+    border-bottom: 16px solid #276C20;
     animation: animate 3s linear infinite;
 }
 
@@ -73,12 +83,54 @@ body{
 }
 
 
+.type {
+   
+    height: 15vh;
+    display: grid;
+    place-items: top;
+  }
+  
+  .logo {
+    font-family: sans-serif;
+    text-align: top;
+    color: #000000ab;
+    margin-top: 0;
+    font-size: 80px;
+    font-weight: 800;
+    text-decoration-style: solid;
+    width: 5ch;
+    -webkit-text-stroke: 1px #fff;
+    animation: typing .8s steps(5), blink .5s step-end infinite alternate;
+    animation-delay: 3s;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    
+    
+  }
+  
+  @keyframes typing{
+    from {
+      width: 0
+    }
+   
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
 #header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(60deg,#ff6596,#66bef8,#d88cff);
+    background-image: linear-gradient(60deg,#045559,#936506,#930A06,#936506,#5C8906,#045559,#930A06,#936506);
+    /*background-image: linear-gradient(60deg,#18514D,#203358,#276C20,#203358,#276C20,#18514D,#203358);
+    background-image: linear-gradient(60deg,#045559,#0E2663,#05740C,#0E2663,#045559,#05740C,#0E2663);*/
     background-size: 600% 600%;
-    animation: bgAnimatedGradient 2s infinite linear;
+    animation: bgAnimatedGradient 4s infinite linear;
     
 }
 @keyframes bgAnimatedGradient{
@@ -91,24 +143,6 @@ body{
     }
 }
 
-.logo{
-    font-family: sans-serif;
-    text-align: center;
-    margin-top: 0;
-    font-size: 80px;
-    font-weight: 800;
-    text-decoration-style: solid;
-    text-decoration: overline;
-    color: transparent;
-    -webkit-text-stroke: 1px #20b9c4;
-    background: url(images/back.png);
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: back 15s linear infinite;
-    background-color: rgb(180, 12, 231);
-
-
-}
 .container{
     padding: 20px 10%;
 }
@@ -118,41 +152,53 @@ nav{
     justify-content:space-between;
     flex-wrap:wrap;
 }
-nav ul li{
+/*nav ul{
     display:inline-block;
     list-style:none;
     margin: 10px 30px;
     position:relative;
-}
+}*/
 
-nav ul li a{
+nav ul{
+    font-family: sans-serif;
+    text-align: top;
+    color: #000000ab;
+    margin-top: 0;
+    font-size: 50px;
+    font-weight: 500;
+    text-decoration-style: solid;
+    width: 21ch;
+    animation: typing .5s steps(21), blink .5s step-end infinite alternate;
+    animation-delay:5s;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
     color: #fff;
     text-decoration:none;
     font-size:30px;
     font-weight: 600;
 }
-nav ul li a::after{
+nav ul::after{
     content:'';
     width: 0;
     height: 3px;
-    background:#ff04ff;
+    background:#1E3F1A;
     position:absolute;
     left: 0;
     bottom:-6px;
 }
-nav ul li a:hover::after{
+nav ul:hover::after{
     width :100%;
 }
+
 .text-box{
     color: #fff;
     position: absolute;
     bottom: 8%;
 }
 .text-box p {
-    font-size: 80px;
-    font-weight: 600;
-    margin-left: 5%;
-    font-size: 80px;
+    margin-left: 0%;
+    font-size: 75px;
     font-weight: 800;
     text-decoration-style: solid;
     text-decoration: overline;
@@ -162,13 +208,13 @@ nav ul li a:hover::after{
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 15s linear infinite;
-    background-color: rgb(231, 12, 213);
+    background-color: #045559;
 
 }
 .text-box h2 span{
     font-size: 40px;
     font-weight: 400;
-    margin-left: 30px;
+    margin-left: 10px;
 
 }
 @keyframes back{
@@ -178,8 +224,9 @@ nav ul li a:hover::after{
 }
 /*----------------------------------------about-------------------------------*/
 #about{
-    padding:80px 0;
+    padding:0 0;
     color: #ababab;
+
 }
 .row{
     display:flex;
@@ -187,25 +234,45 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
     
 }
+.container1{
+    background-image: url(images/fox.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
 .about-col-1 {
     flex-basis: 35%;
 }
 .about-col-1 img{
     width: 100%;
     border-radius:15px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin: auto;
 }
 .about-col-2{
     flex-basis: 60%;
     color: #1d0e0e;
+    margin: auto;
 }
 .subs-title{
     font-size: 60px;
-    font-weight: 600;
-    color: #1d0e0e;
+    font-style:initial;
+    font-weight: 800;
+    color: #0e9482;
+    -webkit-text-stroke: 1px #fff;
+}
+.about-col-2 p{
+    font-size: medium;
+    font-style:initial;
+    font-weight: 800;
+    color: white;
 }
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
+    color: #ff6596;
+    font-weight: 700;
 }
 .tab-links{
     margin-right: 50px;
@@ -230,6 +297,8 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    color: tomato;
+    font-weight: 600;
 }
 .tab-contents ul li span{
     color: #b5476b;
@@ -241,6 +310,3 @@ nav ul li a:hover::after{
 .tab-contents.actice-tab{
     display: block;
 }
-
-
-
