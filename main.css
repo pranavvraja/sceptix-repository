@@ -99,6 +99,7 @@ body{
     font-weight: 800;
     text-decoration-style: solid;
     width: 5ch;
+    -webkit-text-stroke: 1px #fff;
     animation: typing .8s steps(5), blink .5s step-end infinite alternate;
     animation-delay: 3s;
     white-space: nowrap;
@@ -152,20 +153,33 @@ nav{
     justify-content:space-between;
     flex-wrap:wrap;
 }
-nav ul li{
+/*nav ul{
     display:inline-block;
     list-style:none;
     margin: 10px 30px;
     position:relative;
-}
+}*/
 
-nav ul li a{
+nav ul{
+    font-family: sans-serif;
+    text-align: top;
+    color: #000000ab;
+    margin-top: 0;
+    font-size: 50px;
+    font-weight: 500;
+    text-decoration-style: solid;
+    width: 21ch;
+    animation: typing .5s steps(21), blink .5s step-end infinite alternate;
+    animation-delay:5s;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
     color: #fff;
     text-decoration:none;
     font-size:30px;
     font-weight: 600;
 }
-nav ul li a::after{
+nav ul::after{
     content:'';
     width: 0;
     height: 3px;
@@ -174,9 +188,10 @@ nav ul li a::after{
     left: 0;
     bottom:-6px;
 }
-nav ul li a:hover::after{
+nav ul:hover::after{
     width :100%;
 }
+
 .text-box{
     color: #fff;
     position: absolute;
@@ -210,8 +225,9 @@ nav ul li a:hover::after{
 }
 /*----------------------------------------about-------------------------------*/
 #about{
-    padding:80px 0;
+    padding:0 0;
     color: #ababab;
+
 }
 .row{
     display:flex;
@@ -219,25 +235,45 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
     
 }
+.container1{
+    background-image: url(images/fox.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
 .about-col-1 {
     flex-basis: 35%;
 }
 .about-col-1 img{
     width: 100%;
     border-radius:15px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin: auto;
 }
 .about-col-2{
     flex-basis: 60%;
     color: #1d0e0e;
+    margin: auto;
 }
 .subs-title{
     font-size: 60px;
-    font-weight: 600;
-    color: #1d0e0e;
+    font-style:initial;
+    font-weight: 800;
+    color: #0e9482;
+    -webkit-text-stroke: 1px #fff;
+}
+.about-col-2 p{
+    font-size: medium;
+    font-style:initial;
+    font-weight: 800;
+    color: white;
 }
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
+    color: #ff6596;
+    font-weight: 700;
 }
 .tab-links{
     margin-right: 50px;
@@ -262,6 +298,8 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    color: tomato;
+    font-weight: 600;
 }
 .tab-contents ul li span{
     color: #b5476b;
