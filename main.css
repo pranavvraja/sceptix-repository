@@ -127,6 +127,7 @@ body{
     height: 100vh;
     background-image: linear-gradient(60deg,#045559,#936506,#930A06,#936506,#5C8906,#045559,#930A06,#936506);
     /*background-image: linear-gradient(60deg,#18514D,#203358,#276C20,#203358,#276C20,#18514D,#203358);
+    background-image: linear-gradient(60deg,#003b3e,#002e30,#051745,#0b308e,#005105,#003b3e,#017a80);
     background-image: linear-gradient(60deg,#045559,#0E2663,#05740C,#0E2663,#045559,#05740C,#0E2663);*/
     background-size: 600% 600%;
     animation: bgAnimatedGradient 4s infinite linear;
