@@ -345,8 +345,8 @@ nav ul:hover::after{
       text-align: center;
       margin: 0;
       color: var(--color-primary);
-      color: black;
-      
+      color: transparent;
+      background-color: white;
       background-clip: text;
       animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
       letter-spacing: 0.4rem;
@@ -428,22 +428,4 @@ nav ul:hover::after{
       100% {
         transform: translate(0px, 0px);
       }
-    }
-    #sub{
-      
-      margin-right: auto;
-      font-size: 25px;  
-      color: #98550d;
-    }
-    #text{
-      font-size: 20px; 
-      font-family:Georgia;
-      
-    }
-    #img1{
-      width: 300px;
-     
-      float:right;
-      border-radius: 50%;
-       
     }
