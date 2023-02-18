@@ -99,7 +99,7 @@ body{
     font-weight: 800;
     text-decoration-style: solid;
     width: 5ch;
-    -webkit-text-stroke: 1px #fff;
+    
     animation: typing .8s steps(5), blink .5s step-end infinite alternate;
     animation-delay: 3s;
     white-space: nowrap;
