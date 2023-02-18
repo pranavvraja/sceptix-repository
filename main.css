@@ -321,6 +321,60 @@ nav {
 }
 
 
+
+.cotents h2{
+    font-weight: 800;
+}
+.cotents h6{
+    color: whitesmoke;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    text-decoration-style: solid;
+    text-decoration: overline;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 15s linear infinite;
+    background-color: #045559;
+    font-size: 120px;
+}
+.gallery{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    margin: 5% auto 0;
+    box-sizing: border-box; 
+}
+.image-box{
+    margin: 0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+   
+}
+.active{
+    flex-basis: 50%;
+}
+.gallery:hover .active{
+    flex-basis: 0;
+}
+.image-box:nth-child(1):hover{
+    flex-basis: 50%;
+}
+.image-box:hover{
+    flex-basis: 50%;
+}
+
+
 *,
 *::before,
 *::after {
@@ -347,6 +401,20 @@ nav {
 .text_shadows {
     text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
         9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+     
+      font-family: bungee, sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: calc(2rem + 5vw);
+      text-align: center;
+      margin: 0;
+      color: var(--color-primary);
+      color: black;
+      
+      background-clip: text;
+      animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+      letter-spacing: 0.4rem;
+
     font-family: bungee, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -355,7 +423,7 @@ nav {
     margin: 0;
     color: var(--color-primary);
     color: transparent;
-    background-color: white;
+    background-color:transparent;
     background-clip: text;
     animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
     letter-spacing: 0.4rem;
@@ -436,5 +504,25 @@ nav {
 
     100% {
         transform: translate(0px, 0px);
+
+      }
     }
-}
+    #sub{
+      
+      margin-right: auto;
+      font-size: 25px;  
+      color: #98550d;
+    }
+    #text{
+      font-size: 20px; 
+      font-family:Georgia;
+      
+    }
+    #img1{
+      width: 300px;
+     
+      float:right;
+      border-radius: 50%;
+       
+    }
+
