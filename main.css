@@ -112,7 +112,7 @@ nav ul {
     font-family: 'Courier New', Courier, monospace;
     text-align: top;
     color: #ffffffb5;
-    margin-top: 5%;
+    margin-top: 2.5%;
     text-decoration-style: solid;
     width: 24ch;
     animation: typing .9s steps(21), blink .5s step-end infinite alternate;
@@ -228,7 +228,6 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     height: 100vh;
-
 }
 
 .container1 {
