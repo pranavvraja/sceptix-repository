@@ -655,7 +655,8 @@ footer {
     font-size: 14px;
     word-spacing: 4px;
     letter-spacing: 2px;
-
+    font-family: 'Courier New', Courier, monospace;
+    
   }
   
   @media (max-width:500px) {
