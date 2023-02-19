@@ -473,6 +473,7 @@ nav ul:hover::after {
     font-size: 20px;
     font-family: ilatics;
     margin-left: 5%;
+    color:wheat;
 }
 
 .container3{
@@ -568,7 +569,7 @@ h4 {
     height: 10px;
     background-size: 20px 20px;
     background-image:
-     radial-gradient(circle at 10px -5px, transparent 12px, #d6e411 13px);
+     radial-gradient(circle at 10px -5px, transparent 12px, #b4b5ab 13px);
   }
   .wave::after{
     content: "";
@@ -658,10 +659,11 @@ footer {
   }
 #alt{
     font-weight: bolder;
-    color: #5a87c6;
+    color: #c7eb11;
     padding-left: 5%;
     padding-right: 5%;
     font-size: 40px;
+    text-align: left;
 }
 #altc{
     font-size: 30px;
