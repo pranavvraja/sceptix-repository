@@ -648,4 +648,19 @@ footer {
       margin-bottom: 20px;
     }
   }
+#alt{
+    font-weight: bolder;
+    color: #5a87c6;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 40px;
+}
+#altc{
+    font-size: 30px;
+    padding-left: 5%;
+    text-align: left;
+    font-style: italic;
+    padding-right: 5%;
+}
+
 
