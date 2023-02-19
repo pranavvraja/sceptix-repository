@@ -21,7 +21,7 @@
 }
 
 body {
-    background-color: #045559;
+    background-color: #0e9482;
     /*background-image: linear-gradient(60deg, #045559, #936506, #930A06, #936506, #5C8906, #045559, #930A06, #936506);
     background-size: 600% 600%;
     animation: bgAnimatedGradient 2s infinite linear;
@@ -501,7 +501,7 @@ h4 {
     background-position: 0 0;
     animation: back 15s linear infinite;
     background-color: #045559;
-    font-size: 120px;
+    font-size: 80px;
 }
 
 .gallery {
