@@ -1,7 +1,7 @@
 # sceptix-repository
 ## team #R2322  
 
-Main file : [foss.html](github.com/pranavvraja/sceptix-repository/foss.html)   
+Main file : [foss.html](https://pranavvraja.github.io/sceptix-repository/foss.html)   
 
 ### Coded by:  
 * @pranavvraja  
