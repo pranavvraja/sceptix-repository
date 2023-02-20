@@ -25,7 +25,8 @@ body {
     /*background-image: linear-gradient(60deg, #045559, #936506, #930A06, #936506, #5C8906, #045559, #930A06, #936506);
     background-size: 600% 600%;
     animation: bgAnimatedGradient 2s infinite linear;
-*/}
+*/
+}
 
 @keyframes bgAnimatedGradient {
     0% {
@@ -41,7 +42,7 @@ body {
     position: fixed;
     background-size: 600% 600%;
     animation: bgAnimatedGradient 4s infinite linear;
-    background-image: linear-gradient(60deg, #045559, #0f3a7a, #13afb8,  #0f6ac0);
+    background-image: linear-gradient(60deg, #045559, #0f3a7a, #13afb8, #0f6ac0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,7 +129,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(60deg, #045559, #936506, #5C8906, #045559,  #936506);
+    background-image: linear-gradient(60deg, #045559, #936506, #5C8906, #045559, #936506);
     /*background-image: linear-gradient(60deg,#18514D,#203358,#276C20,#203358,#276C20,#18514D,#203358);
     background-image: linear-gradient(60deg,#003b3e,#002e30,#051745,#0b308e,#005105,#003b3e,#017a80);
     background-image: linear-gradient(60deg,#045559,#0E2663,#05740C,#0E2663,#045559,#05740C,#0E2663);*/
@@ -351,16 +352,17 @@ nav ul:hover::after {
           */
 }
 
-.content{
+.content {
     padding: auto;
     font-weight: 400;
 }
-#history{
+
+#history {
     color: #fff;
 
 }
 
-.container2{
+.container2 {
     background-image: url(images/fox.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -387,10 +389,10 @@ nav ul:hover::after {
     font-size: 20px;
     font-family: ilatics;
     margin-left: 5%;
-    color:wheat;
+    color: wheat;
 }
 
-.container3{
+.container3 {
     background-image: url(images/foss-abt.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -411,7 +413,7 @@ h4 {
     text-decoration-style: solid;
     text-decoration: overline;
     color: transparent;
-   /* -webkit-text-stroke: 1px #fff;*/
+    /* -webkit-text-stroke: 1px #fff;*/
     background: url(images/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
@@ -426,7 +428,7 @@ h4 {
     display: flex;
     box-sizing: border-box;
     padding-bottom: 5%;
-    
+
 }
 
 .image-box {
@@ -459,22 +461,22 @@ h4 {
     flex-basis: 5;
 }*/
 
-.wave{
+.wave {
     height: 100px;
     position: relative;
-    background: linear-gradient(90deg, #6b0679 , #5C8906  100%);
-    color:#120309;
-    text-align:center;
-    font-weight:bold;
+    background: linear-gradient(90deg, #6b0679, #5C8906 100%);
+    color: #120309;
+    text-align: center;
+    font-weight: bold;
     font: size 80px;
-    padding-top:25px;
-    padding-bottom:25px;
-    
-  }
-  
-  
-  
-  .wave::before{
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+
+
+.wave::before {
     content: "";
     position: absolute;
     left: 0;
@@ -484,9 +486,10 @@ h4 {
     height: 10px;
     background-size: 20px 20px;
     background-image:
-     radial-gradient(circle at 10px -5px, transparent 12px, #b4b5ab 13px);
-  }
-  .wave::after{
+        radial-gradient(circle at 10px -5px, transparent 12px, #b4b5ab 13px);
+}
+
+.wave::after {
     content: "";
     position: absolute;
     left: 0;
@@ -496,30 +499,61 @@ h4 {
     height: 15px;
     background-size: 40px 20px;
     background-image:
-      radial-gradient(circle at 10px 15px, #c66d41 12px, transparent 13px);
-  }
+        radial-gradient(circle at 10px 15px, #c66d41 12px, transparent 13px);
+}
 
 
-  .container4{
+.container4 {
     background-image: url(images/fox.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     padding: 5%;
 
-  }
-  
-  .title2 {
+}
+
+.title2 {
     font-size: 30px;
     font-style: initial;
     font-weight: 800;
     color: #0e9482;
     -webkit-text-stroke: 1px #fff;
     margin-left: 5%;
-  }
+}
+
+#alt {
+    font-weight: bolder;
+    color: #c7eb11;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 40px;
+    text-align: left;
+}
+
+#altc {
+    font-size: 25px;
+    padding-left: 5%;
+    text-align: left;
+    font-style: italic;
+    padding-right: 5%;
+    color: wheat;
+}
 
 
+.mark1 {
 
+    font-size: 25px;
+    padding-left: 5%;
+    text-align: left;
+    font-style: italic;
+    padding-right: 5%;
+    color: wheat;
+}
+
+
+mark {
+    background-color: rgb(78, 78, 189);
+}
 
 
 
@@ -580,35 +614,8 @@ footer {
     word-spacing: 4px;
     letter-spacing: 2px;
     font-family: 'Courier New', Courier, monospace;
-    
-  }
-  
-  @media (max-width:500px) {
-    .footer-menu ul {
-      display: flex;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-  }
-#alt{
-    font-weight: bolder;
-    color: #c7eb11;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-size: 40px;
-    text-align: left;
+
 }
-#altc{
-    font-size: 25px;
-    padding-left: 5%;
-    text-align: left;
-    font-style: italic;
-    padding-right: 5%;
-    color:wheat ;
-}
-
-
-
 
 @media (max-width:500px) {
     .footer-menu ul {
@@ -617,13 +624,3 @@ footer {
         margin-bottom: 20px;
     }
 }
-#mark{
-    
-    font-size: 25px;
-    padding-left: 5%;
-    text-align: left;
-    font-style: italic;
-    padding-right: 5%;
-    color: wheat;
-}
-
