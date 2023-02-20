@@ -365,6 +365,7 @@ nav ul:hover::after {
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
+    padding: 5%;
 }
 
 .title1 {
@@ -394,10 +395,11 @@ nav ul:hover::after {
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
+    padding: 5%;
 }
 
 #history {
-    font-size: 30px;
+    font-size: 20px;
     margin: 5%;
     text-align: left;
     font-style: italic;
@@ -496,8 +498,25 @@ h4 {
     background-image:
       radial-gradient(circle at 10px 15px, #c66d41 12px, transparent 13px);
   }
-  
 
+
+  .container4{
+    background-image: url(images/fox.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 5%;
+
+  }
+  
+  .title2 {
+    font-size: 30px;
+    font-style: initial;
+    font-weight: 800;
+    color: #0e9482;
+    -webkit-text-stroke: 1px #fff;
+    margin-left: 5%;
+  }
 
 
 
