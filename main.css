@@ -226,7 +226,7 @@ nav ul:hover::after {
     }
 }
 
-/*----------------------------------------about-------------------------------*/
+
 #about {
     padding: 0 0;
     color: #ababab;
@@ -328,28 +328,6 @@ nav ul:hover::after {
 
 .tab-contents.actice-tab {
     display: block;
-}
-
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-:root {
-    --color-primary: #f6aca2;
-    --color-secondary: #f49b90;
-    --color-tertiary: #f28b7d;
-    --color-quaternary: #f07a6a;
-    --color-quinary: #161515;
-    /*
-          --color-primary: #5192ED;
-          --color-secondary: #69A1F0;
-          --color-tertiary: #7EAEF2;
-          --color-quaternary: #90BAF5;
-          --color-quinary: #A2C4F5;
-          */
 }
 
 .content {
@@ -461,48 +439,6 @@ h4 {
     flex-basis: 5;
 }*/
 
-.wave {
-    height: 100px;
-    position: relative;
-    background: linear-gradient(90deg, #6b0679, #5C8906 100%);
-    color: #120309;
-    text-align: center;
-    font-weight: bold;
-    font: size 80px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-
-}
-
-
-
-.wave::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-repeat: repeat;
-    height: 10px;
-    background-size: 20px 20px;
-    background-image:
-        radial-gradient(circle at 10px -5px, transparent 12px, #b4b5ab 13px);
-}
-
-.wave::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-repeat: repeat;
-    height: 15px;
-    background-size: 40px 20px;
-    background-image:
-        radial-gradient(circle at 10px 15px, #c66d41 12px, transparent 13px);
-}
-
-
 .container4 {
     background-image: url(images/fox.jpg);
     background-repeat: no-repeat;
@@ -556,11 +492,6 @@ mark {
 }
 
 
-
-
-
-
-
 footer {
     position: static;
     bottom: 0;
@@ -571,6 +502,7 @@ footer {
     width: 100%;
     padding-top: 15px;
     color: #fff;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 
@@ -580,6 +512,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .footer-content h2 {
