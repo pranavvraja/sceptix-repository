@@ -599,11 +599,12 @@ footer {
     text-align: left;
 }
 #altc{
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 5%;
     text-align: left;
     font-style: italic;
     padding-right: 5%;
+    color:wheat ;
 }
 
 
@@ -616,5 +617,13 @@ footer {
         margin-bottom: 20px;
     }
 }
-
+#mark{
+    
+    font-size: 25px;
+    padding-left: 5%;
+    text-align: left;
+    font-style: italic;
+    padding-right: 5%;
+    color: wheat;
+}
 
