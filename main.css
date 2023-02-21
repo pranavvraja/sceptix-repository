@@ -21,7 +21,7 @@
 }
 
 body {
-    background-color: #084D5D;
+    background-color: #0e9482;
     /*background-image: linear-gradient(60deg, #045559, #936506, #930A06, #936506, #5C8906, #045559, #930A06, #936506);
     background-size: 600% 600%;
     animation: bgAnimatedGradient 2s infinite linear;
@@ -42,8 +42,7 @@ body {
     position: fixed;
     background-size: 600% 600%;
     animation: bgAnimatedGradient 4s infinite linear;
-    background-image: linear-gradient(60deg, #050F36, #0A1E69, #0C288F);
-    /*background-image: linear-gradient(60deg, #045559, #0f3a7a, #13afb8, #0f6ac0);*/
+    background-image: linear-gradient(60deg, #045559, #0f3a7a, #13afb8, #0f6ac0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,9 +70,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    color: #D36300;
+    color: #d1ce13;
     overflow: hidden;
-    border-bottom: 16px solid #D36300;
+    border-bottom: 16px solid #c5d30a;
     animation: animate 3s linear infinite;
 }
 
@@ -177,6 +176,19 @@ nav ul {
     font-weight: 600;
 }
 
+nav ul::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #1E3F1A;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+nav ul:hover::after {
+    width: 100%;
+}
 
 .text-box {
     color: #fff;
@@ -189,17 +201,15 @@ nav ul {
     font-size: 75px;
     font-weight: 800;
     text-decoration-style: solid;
+    text-decoration: overline;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    /*
-    color: #045559;
-    */
-    text-decoration: overline;
-    background-color: #D36900;
     background: url(images/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 15s linear infinite;
+    background-color: #045559;
+
 }
 
 .text-box h2 span {
@@ -216,6 +226,13 @@ nav ul {
     }
 }
 
+
+#about {
+    padding: 0 0;
+    color: #ababab;
+
+}
+
 .row {
     display: flex;
     justify-content: space-between;
@@ -224,7 +241,7 @@ nav ul {
 }
 
 .container1 {
-    background-image: url(images/foss-abt.jpg);
+    background-image: url(images/back3.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -252,7 +269,7 @@ nav ul {
     font-size: 60px;
     font-style: initial;
     font-weight: 800;
-    color: #057791;
+    color: #0e9482;
     -webkit-text-stroke: 1px #fff;
 }
 
@@ -324,7 +341,7 @@ nav ul {
 }
 
 .container2 {
-    background-image: url(images/fox.jpg);
+    background-image: url(images/ba12.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -335,28 +352,26 @@ nav ul {
     font-size: 60px;
     font-style: initial;
     font-weight: 800;
-    color: #057791;
+    color: #0e9482;
     -webkit-text-stroke: 1px #fff;
     margin-left: 5%;
 }
 
 #benefit-head {
-    font-weight: 30px;
-    color: #EBA302;
+    font-weight: 700;
+    color: #930A06;
     margin-left: 5%;
-    font-size: 30px;
 }
 
 #benefit-content {
     font-size: 20px;
     font-family: ilatics;
-    font-style: initial;
     margin-left: 5%;
     color: wheat;
 }
 
 .container3 {
-    background-image: url(images/foss-abt.jpg);
+    background-image: url(images/ba1.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -381,7 +396,7 @@ h4 {
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 15s linear infinite;
-    background-color: #057791;
+    background-color: #045559;
     font-size: 80px;
 }
 
@@ -411,22 +426,21 @@ h4 {
 .active {
     flex-basis: 0;
 }
-
-/*.gallery:hover .active {
+/*
+.gallery:hover .active {
     flex-basis: 50%;
-}*/
-
-.image-box:nth-child(1):hover {
-    flex-basis: 0;
 }
 
-/*.image-box:hover {
-    flex-basis: 5;
+.image-box:nth-child(1):hover {
+    flex-basis: ;
+}
+
+.image-box:hover {
+    flex-basis: 0;
 }*/
 
 .container4 {
-    background-image: url(images/fox.jpg);
-    background-repeat: no-repeat;
+    background-image: url(images/ba2.jpg);
     background-size: 100%;
     background-attachment: fixed;
     padding: 5%;
@@ -437,17 +451,17 @@ h4 {
     font-size: 30px;
     font-style: initial;
     font-weight: 800;
-    color: #057791;
+    color: #0e9482;
     -webkit-text-stroke: 1px #fff;
     margin-left: 5%;
 }
 
 #alt {
     font-weight: bolder;
-    color: #EBA302;
+    color: #c7eb11;
     padding-left: 5%;
     padding-right: 5%;
-    font-size: 30px;
+    font-size: 40px;
     text-align: left;
 }
 
@@ -482,7 +496,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #111;
+    background: #3586ff;
     height: auto;
     width: 100%;
     padding-top: 15px;
@@ -511,12 +525,24 @@ footer {
 .footer-content p {
     max-width: 500px;
     margin: 5px auto;
+    font-weight: 700;
     line-height: 28px;
     font-size: 14px;
     color: #cacdd2;
     font-family: 'Times New Roman', Times, serif;
 }
+.footer-content li a{
+    color: #10110e;
+    font-size: medium;
+    margin: 0 10px;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.5s;
+}
 
+.footer-content li a:hover{
+    transform: translateY(-2px);
+}
 
 .footer-bottom {
     background: #000;
