@@ -241,7 +241,7 @@ nav ul:hover::after {
 }
 
 .container1 {
-    background-image: url(images/back3.jpg);
+    background-image: url(images/foss-abt.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -444,7 +444,15 @@ h4 {
     background-size: 100%;
     background-attachment: fixed;
     padding: 5%;
+    background-repeat: no-repeat;
 
+}
+.container5 {
+    background-image: url(images/back3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 5%;
 }
 
 .title2 {
@@ -496,7 +504,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #3586ff;
+    background: #111;
     height: auto;
     width: 100%;
     padding-top: 15px;
@@ -532,7 +540,7 @@ footer {
     font-family: 'Times New Roman', Times, serif;
 }
 .footer-content li a{
-    color: #10110e;
+    color: #cacdd2;
     font-size: medium;
     margin: 0 10px;
     font-weight: 600;
