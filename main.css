@@ -21,7 +21,7 @@
 }
 
 body {
-    background-color: #0e9482;
+    background-color: #084D5D;
     /*background-image: linear-gradient(60deg, #045559, #936506, #930A06, #936506, #5C8906, #045559, #930A06, #936506);
     background-size: 600% 600%;
     animation: bgAnimatedGradient 2s infinite linear;
@@ -41,7 +41,7 @@ body {
 #loader {
     position: fixed;
     background-size: 600% 600%;
-    animation: bgAnimatedGradient 4s infinite linear;
+    animation: bgAnimatedGradient 3s infinite linear;
     background-image: linear-gradient(60deg, #045559, #0f3a7a, #13afb8, #0f6ac0);
     display: flex;
     align-items: center;
@@ -70,10 +70,10 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    color: #d1ce13;
+    color: #D36300;
     overflow: hidden;
-    border-bottom: 16px solid #c5d30a;
-    animation: animate 3s linear infinite;
+    border-bottom: 16px solid #D36300;
+    animation: animate 2s linear infinite;
 }
 
 @keyframes animate {
@@ -176,20 +176,6 @@ nav ul {
     font-weight: 600;
 }
 
-nav ul::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #1E3F1A;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-}
-
-nav ul:hover::after {
-    width: 100%;
-}
-
 .text-box {
     color: #fff;
     position: absolute;
@@ -201,15 +187,12 @@ nav ul:hover::after {
     font-size: 75px;
     font-weight: 800;
     text-decoration-style: solid;
-    text-decoration: overline;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
     background: url(images/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 15s linear infinite;
-    background-color: #045559;
-
 }
 
 .text-box h2 span {
@@ -245,6 +228,8 @@ nav ul:hover::after {
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
+    height: 100vh;
+    padding: auto;
 }
 
 .about-col-1 {
@@ -263,13 +248,14 @@ nav ul:hover::after {
     flex-basis: 60%;
     color: #1d0e0e;
     margin: auto;
+    text-align: justify;
 }
 
 .subs-title {
     font-size: 60px;
     font-style: initial;
     font-weight: 800;
-    color: #0e9482;
+    color: #057791;
     -webkit-text-stroke: 1px #fff;
 }
 
@@ -283,7 +269,7 @@ nav ul:hover::after {
 .tab-titles {
     display: flex;
     margin: 20px 0 40px;
-    color: #ff6596;
+    color: #EBA302;
     font-weight: 700;
 }
 
@@ -299,7 +285,7 @@ nav ul:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #EBA302;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -313,12 +299,12 @@ nav ul:hover::after {
 .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
-    color: tomato;
+    color: #EB7502;
     font-weight: 600;
 }
 
 .tab-contents ul li span {
-    color: #b5476b;
+    color: #EB7502;
     font-size: 14px;
 }
 
@@ -341,7 +327,7 @@ nav ul:hover::after {
 }
 
 .container2 {
-    background-image: url(images/ba12.jpg);
+    background-image: url(images/fox.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -352,26 +338,31 @@ nav ul:hover::after {
     font-size: 60px;
     font-style: initial;
     font-weight: 800;
-    color: #0e9482;
+    color: #057791;
     -webkit-text-stroke: 1px #fff;
     margin-left: 5%;
 }
 
 #benefit-head {
+    font-weight: 30px;
+    color: #EBA302;
     font-weight: 700;
-    color: #930A06;
     margin-left: 5%;
+    font-size: 30px;
 }
 
 #benefit-content {
     font-size: 20px;
-    font-family: ilatics;
+    font-style: italic;
     margin-left: 5%;
+    margin-right: 5%;
     color: wheat;
+    text-align: justify;
+    line-height: 30px;
 }
 
 .container3 {
-    background-image: url(images/ba1.jpg);
+    background-image: url(images/ba6.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -381,23 +372,10 @@ nav ul:hover::after {
 #history {
     font-size: 20px;
     margin: 5%;
-    text-align: left;
+    color: wheat;
+    text-align: justify;
     font-style: italic;
-}
-
-h4 {
-    text-align: center;
-    margin-top: 30px;
-    text-decoration-style: solid;
-    text-decoration: overline;
-    color: transparent;
-    /* -webkit-text-stroke: 1px #fff;*/
-    background: url(images/back.png);
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: back 15s linear infinite;
-    background-color: #045559;
-    font-size: 80px;
+    line-height: 30px;
 }
 
 .container4 {
@@ -408,8 +386,9 @@ h4 {
     background-repeat: no-repeat;
 
 }
+
 .container5 {
-    background-image: url(images/back3.jpg);
+    background-image: url(images/ab2.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -420,27 +399,30 @@ h4 {
     font-size: 30px;
     font-style: initial;
     font-weight: 800;
-    color: #0e9482;
+    color: #057791;
     -webkit-text-stroke: 1px #fff;
     margin-left: 5%;
 }
 
 #alt {
     font-weight: bolder;
-    color: #c7eb11;
+    color: #EBA302;
     padding-left: 5%;
     padding-right: 5%;
-    font-size: 40px;
+    font-size: 30px;
     text-align: left;
+    letter-spacing: 1px;
+
 }
 
 #altc {
-    font-size: 25px;
+    font-size: 20px;
     padding-left: 5%;
-    text-align: left;
+    text-align: justify;
     font-style: italic;
     padding-right: 5%;
     color: wheat;
+    line-height: 30px;
 }
 
 
@@ -448,15 +430,11 @@ h4 {
 
     font-size: 25px;
     padding-left: 5%;
-    text-align: left;
+    text-align: justify;
     font-style: italic;
     padding-right: 5%;
     color: wheat;
-}
-
-
-mark {
-    background-color: rgb(78, 78, 189);
+    line-height: 35px;
 }
 
 
@@ -500,7 +478,8 @@ footer {
     color: #cacdd2;
     font-family: 'Times New Roman', Times, serif;
 }
-.footer-content li a{
+
+.footer-content li a {
     color: #cacdd2;
     font-size: medium;
     margin: 0 10px;
@@ -509,7 +488,7 @@ footer {
     transition: 0.5s;
 }
 
-.footer-content li a:hover{
+.footer-content li a:hover {
     transform: translateY(-2px);
 }
 
